@@ -69,14 +69,14 @@
   function Particle() {
 
     this.character = "*";
-    this.lifeSpan = 120; //ms
+    this.lifeSpan = 150; //ms
     this.initialStyles ={
       "position": "fixed",
       "top": "0", //必须加
       "display": "block",
       "pointerEvents": "none",
       "z-index": "10000000",
-      "fontSize": "20px",
+      "fontSize": "30px",
       "will-change": "transform"
     };
 
