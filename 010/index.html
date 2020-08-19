@@ -24,24 +24,40 @@
     var CONFIG = {"hostname":"blog.ruoli.vip","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
   </script>
 
-  <meta name="description" content="现在网络上很多Windows10的激活工具 但是你知道Windows10也有好几种不同的激活方式吗？ 怎么查看自己的激活方式是不是永久激活呢？">
+  <meta name="description" content="git安装教程（初识git）一、下载git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="查询Windows10是否永久激活">
-<meta property="og:url" content="http://blog.ruoli.vip/2020/04/13/%E6%9F%A5%E8%AF%A2Windows10%E6%98%AF%E5%90%A6%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB/index.html">
+<meta property="og:title" content="初识git之安装git">
+<meta property="og:url" content="http://blog.ruoli.vip/010/index.html">
 <meta property="og:site_name" content="若离博客">
-<meta property="og:description" content="现在网络上很多Windows10的激活工具 但是你知道Windows10也有好几种不同的激活方式吗？ 怎么查看自己的激活方式是不是永久激活呢？">
+<meta property="og:description" content="git安装教程（初识git）一、下载git">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586788955837&di=59520810bdcd84b61fb278ef41edb522&imgtype=0&src=http://editerupload.eepw.com.cn/201803/7fa7fb2470bf0197beae571d680f734b.jpg">
-<meta property="og:image" content="https://ae01.alicdn.com/kf/Ue5e3dd253a494f66aabdc72d46bbf74fm.jpg">
-<meta property="article:published_time" content="2020-04-13T12:00:00.000Z">
-<meta property="article:modified_time" content="2020-08-19T02:45:53.955Z">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTIzYThkYWYwOTI5YTQwYTA5ZDQyZWZhMjQ4YzFkYzg1VS5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTIzNGNmNmY4MDQxNzRhZDZhNmEyNjE3OTQ1YTAyZWVheS5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWEwODYxZTVhZWViZTQ1MTViNTkwNGM4ZDY1Y2U3MzY3ei5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTgzOTQ1MDdhYjQ2MDQzYzBiNzk0MWJiMmMwZTdhZmMyOS5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTIzMDc3N2QxNTlmNDQ0OTA5NmUwMTY4YTA0YmE5ZmMwbC5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTk2OWYzMWFhM2Q1YTRmNmE4MjE1MzRkMGIzZjY1YTg3cy5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTA0OGVhY2Y2NWNmYjQ2ZmZhNWFkMTkzZmIzMDZiZDg1QS5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTZiNDNhMzIzMTliNzQ5NWE4NGVkNzMxZTM1NDYxMTllbC5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWFiOWQ5NDdhM2U1ZTRjODY4YzczN2IzODExMTdkYjk4US5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTg3YTc0YTc3ZTllMDQ4MDdhZGRjNjAwZDhjODQ2YzQ5Mi5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTc3MTI2OTJmNjg0YTRhYjA4YzQ3ZDUzZTQ2ZTYyOWQ1ZC5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTYwZjhmZDY1ODBmYzQ0ODU4NzlhZWM2Yjg5ZDI5ZTNhMi5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWQwMDM0YTZhZjNlODRlZWNiODVjNDZiZDA2ZTkyZWVkeC5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWMxODYyYjcwODJjMjRlOGE5NmZlNGRkMzVkMDJhNzZmeC5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWJhMTE3MTgzZDQwMTQ2YTNhMWJiNmEzZWZiZjAzOGZjei5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWQzMDNhZjY0NGFlZjQ3NGY4YzJhMzMyYzBiMGJmZTMwby5qcGc?x-oss-process=image/format,png#pic_left">
+<meta property="article:published_time" content="2020-08-18T14:04:55.000Z">
+<meta property="article:modified_time" content="2020-08-18T14:12:44.305Z">
 <meta property="article:author" content="若离">
-<meta property="article:tag" content="教程">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="git">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586788955837&di=59520810bdcd84b61fb278ef41edb522&imgtype=0&src=http://editerupload.eepw.com.cn/201803/7fa7fb2470bf0197beae571d680f734b.jpg">
+<meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTIzYThkYWYwOTI5YTQwYTA5ZDQyZWZhMjQ4YzFkYzg1VS5qcGc?x-oss-process=image/format,png#pic_left">
 
 
-<link rel="canonical" href="http://blog.ruoli.vip/2020/04/13/%E6%9F%A5%E8%AF%A2Windows10%E6%98%AF%E5%90%A6%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB/">
+<link rel="canonical" href="http://blog.ruoli.vip/010/">
 
 
 <script class="page-configurations">
@@ -54,7 +70,7 @@
   };
 </script>
 
-  <title>查询Windows10是否永久激活 | 若离博客</title>
+  <title>初识git之安装git | 若离博客</title>
   
 
 
@@ -175,7 +191,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -187,6 +203,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%EF%BC%88%E5%88%9D%E8%AF%86git%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">git安装教程（初识git）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%B8%8B%E8%BD%BDgit"><span class="nav-number">1.1.</span> <span class="nav-text">一、下载git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85git"><span class="nav-number">1.2.</span> <span class="nav-text">二、安装git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90"><span class="nav-number">1.3.</span> <span class="nav-text">三、安装完成</span></a></li></ol></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -256,7 +273,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.ruoli.vip/2020/04/13/%E6%9F%A5%E8%AF%A2Windows10%E6%98%AF%E5%90%A6%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB/">
+    <link itemprop="mainEntityOfPage" href="http://blog.ruoli.vip/010/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://ae01.alicdn.com/kf/U9af17ccafc46417e8cfef9892266a4b7J.jpg">
@@ -272,7 +289,7 @@
     
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          查询Windows10是否永久激活
+          初识git之安装git
         </h1>
 
         <div class="post-meta">
@@ -281,16 +298,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-04-13 20:00:00" itemprop="dateCreated datePublished" datetime="2020-04-13T20:00:00+08:00">2020-04-13</time>
+              <time title="创建时间：2020-08-18 22:04:55 / 修改时间：22:12:44" itemprop="dateCreated datePublished" datetime="2020-08-18T22:04:55+08:00">2020-08-18</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-19 10:45:53" itemprop="dateModified" datetime="2020-08-19T10:45:53+08:00">2020-08-19</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -310,8 +321,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/04/13/%E6%9F%A5%E8%AF%A2Windows10%E6%98%AF%E5%90%A6%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/13/%E6%9F%A5%E8%AF%A2Windows10%E6%98%AF%E5%90%A6%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB/" itemprop="commentCount"></span>
+    <a title="valine" href="/010/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/010/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -324,19 +335,27 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><img data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586788955837&di=59520810bdcd84b61fb278ef41edb522&imgtype=0&src=http://editerupload.eepw.com.cn/201803/7fa7fb2470bf0197beae571d680f734b.jpg" alt="Windows10"><br>现在网络上很多Windows10的激活工具</p>
-<p>但是你知道Windows10也有好几种不同的激活方式吗？</p>
-<p>怎么查看自己的激活方式是不是永久激活呢？</p>
-<a id="more"></a>
-
-<p>跟着我来操作：</p>
-<blockquote>
-<p>Win+R（或者右键单击开始菜单选择运行）<br>然后我们输入代码：slmgr.vbs -xpr即可查询是否永久激活</p>
-</blockquote>
-<p><img data-src="https://ae01.alicdn.com/kf/Ue5e3dd253a494f66aabdc72d46bbf74fm.jpg" alt="激活界面"></p>
-<blockquote>
-<p>如果我们想查看激活的详细信息，还可以输入slmgr.vbs -dlv来查看</p>
-</blockquote>
+        <h1 id="git安装教程（初识git）"><a href="#git安装教程（初识git）" class="headerlink" title="git安装教程（初识git）"></a>git安装教程（初识git）</h1><h2 id="一、下载git"><a href="#一、下载git" class="headerlink" title="一、下载git"></a>一、下载git</h2><a id="more"></a>
+<p><a target="_blank" rel="noopener" href="https://www.git-scm.com/download/">官网下载（需要翻墙）</a><br><a target="_blank" rel="noopener" href="http://pan.52ruoli.cn/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/git/Git-2.28.0-64-bit.exe?preview">若离网盘下载（国内超高速）</a></p>
+<h2 id="二、安装git"><a href="#二、安装git" class="headerlink" title="二、安装git"></a>二、安装git</h2><ol>
+<li><p>双击exe文件开始安装<br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTIzYThkYWYwOTI5YTQwYTA5ZDQyZWZhMjQ4YzFkYzg1VS5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"></p>
+</li>
+<li><p>单击NEXT开始安装<br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTIzNGNmNmY4MDQxNzRhZDZhNmEyNjE3OTQ1YTAyZWVheS5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"></p>
+</li>
+<li><p>设置安装路径<br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWEwODYxZTVhZWViZTQ1MTViNTkwNGM4ZDY1Y2U3MzY3ei5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"></p>
+</li>
+<li><p>选择配置组件<br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTgzOTQ1MDdhYjQ2MDQzYzBiNzk0MWJiMmMwZTdhZmMyOS5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"></p>
+</li>
+<li><p>开始菜单文件名设置<br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTIzMDc3N2QxNTlmNDQ0OTA5NmUwMTY4YTA0YmE5ZmMwbC5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"></p>
+</li>
+<li><p>其余配置不在赘述，按以下图片配置</p>
+</li>
+</ol>
+<p><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTk2OWYzMWFhM2Q1YTRmNmE4MjE1MzRkMGIzZjY1YTg3cy5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"><br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTA0OGVhY2Y2NWNmYjQ2ZmZhNWFkMTkzZmIzMDZiZDg1QS5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"><br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTZiNDNhMzIzMTliNzQ5NWE4NGVkNzMxZTM1NDYxMTllbC5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"><br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWFiOWQ5NDdhM2U1ZTRjODY4YzczN2IzODExMTdkYjk4US5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"><br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTg3YTc0YTc3ZTllMDQ4MDdhZGRjNjAwZDhjODQ2YzQ5Mi5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"><br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTc3MTI2OTJmNjg0YTRhYjA4YzQ3ZDUzZTQ2ZTYyOWQ1ZC5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"></p>
+<p><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVTYwZjhmZDY1ODBmYzQ0ODU4NzlhZWM2Yjg5ZDI5ZTNhMi5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"><br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWQwMDM0YTZhZjNlODRlZWNiODVjNDZiZDA2ZTkyZWVkeC5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"><br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWMxODYyYjcwODJjMjRlOGE5NmZlNGRkMzVkMDJhNzZmeC5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"></p>
+<ol start="7">
+<li>Install -&gt; 等待安装完成<br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWJhMTE3MTgzZDQwMTQ2YTNhMWJiNmEzZWZiZjAzOGZjei5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"><h2 id="三、安装完成"><a href="#三、安装完成" class="headerlink" title="三、安装完成"></a>三、安装完成</h2>安装完成截图如下所示<br><img data-src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvVWQzMDNhZjY0NGFlZjQ3NGY4YzJhMzMyYzBiMGJmZTMwby5qcGc?x-oss-process=image/format,png#pic_left" alt="在这里插入图片描述"><br>到这里，就表示安装成功了，开始使用我们的git吧！</li>
+</ol>
 
     </div>
 
@@ -372,7 +391,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.ruoli.vip/2020/04/13/%E6%9F%A5%E8%AF%A2Windows10%E6%98%AF%E5%90%A6%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB/" title="查询Windows10是否永久激活">http://blog.ruoli.vip/2020/04/13/查询Windows10是否永久激活/</a>
+    <a href="http://blog.ruoli.vip/010/" title="初识git之安装git">http://blog.ruoli.vip/010/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -381,21 +400,20 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 教程</a>
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
+              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2020/04/13/JDK%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" rel="prev" title="JDK环境变量配置教程">
-                  <i class="fa fa-chevron-left"></i> JDK环境变量配置教程
+                <a href="/009/" rel="prev" title="http强制跳转https">
+                  <i class="fa fa-chevron-left"></i> http强制跳转https
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2020/04/13/JDK14%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" rel="next" title="JDK14环境变量配置教程">
-                  JDK14环境变量配置教程 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
